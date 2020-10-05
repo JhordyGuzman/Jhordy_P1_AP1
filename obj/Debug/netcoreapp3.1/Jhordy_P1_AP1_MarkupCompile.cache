@@ -1,20 +1,20 @@
 ﻿Jhordy_P1_AP1
-1.0.0.0
+
 
 winexe
 C#
 .cs
-c:\Users\jhord\Source\Repos\Jhordy_P1_AP1\obj\Debug\netcoreapp3.1\
+C:\Users\jhord\Source\Repos\Jhordy_P1_AP1\obj\Debug\netcoreapp3.1\
 Jhordy_P1_AP1
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-c:\Users\jhord\Source\Repos\Jhordy_P1_AP1\App.xaml
-1219584333
+C:\Users\jhord\Source\Repos\Jhordy_P1_AP1\App.xaml
+21669002461
+4-524623401
+11865392964
+2161355858852
+MainWindow.xaml;UI\Registros\rCiudades.xaml;
 
-91466192040
-192674553305
-MainWindow.xaml;
-
-True
+False
 

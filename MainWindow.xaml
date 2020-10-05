@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jhordy_P1_AP1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Menu Principal" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Menu>
-                    <MenuItem Header= "Registros">
-                        
+             <Menu Height="20" VerticalAlignment="Top">
+            <MenuItem  Header="Registros">
+                <MenuItem x:Name="RegistrosCiudades" Header="Registros Ciudades" Click="RegistrosCiudades_Click"></MenuItem>
                     
                     
                     </MenuItem>
