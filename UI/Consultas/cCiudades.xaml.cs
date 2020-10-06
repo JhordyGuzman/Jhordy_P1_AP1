@@ -29,6 +29,33 @@ namespace Jhordy_P1_AP1.UI.Consultas
 
         }
 
+
+        private void BuscarButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            var listado = new List<Ciudades>();
+
+            if (string.IsNullOrWhiteSpace(CriterioTextBox.Text))
+            {
+                switch(FiltroComboBox.SelectedIndex){
+                    case 1:{
+                        listado = CiudadesBLL.GetList(e => e.CiudadId == Utilidades.ToInt(CriterioTextBox.Text));
+                        break;
+                    }
+                    case 2:{
+                        listado= CiudadesBLL.GetList(e => e.Nombre.Contains(CriterioTextBox.Text, StringComparison.OrdinalIgnoreCase));
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                listado= CiudadesBLL.GetList(p => true);
+            }
+                Consulta.ItemsSource = null;
+                Consulta.ItemsSource = listado;
+            
+        }
         
 
     }

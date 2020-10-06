@@ -8,9 +8,29 @@
     Title="Consulta Ciudades" Height="500" Width="800">
     <Grid>
         <StackPanel>
+
+            <Label Content = "Filtro" FontWeight= "Bold" Margin="20,60,0,0"></Label>
+            <ComboBox x:Name= "FiltroComboBox" Width= "100" Height= "30" Margin="-550,-30,0,0"> 
+            <ComboBoxItem Content ="CiudadId"/>
+            <ComboBoxItem Content= "Nombre"/>
+            </ComboBox>
             
-           
-            
-        </StackPanel>
+            <Label Content= "Criterio:" FontWeight= "Bold"  Margin="180,-25,0,0"/>
+            <TextBox x:Name= "CriterioTextBox" Width="100" Height= "30" Margin="-180,-40,0,0"/>
+
+
+          <Button  x:Name="BuscarButton"  Content="Buscar" Width="120" Height="35" Margin="500,-50,0,0" Click="BuscarButton_Click"  />
+          <!-- <Image Source= "/Imagenes/Buscar.png" Width="50" Height= "30" Margin= "120,-55,1,1"/>-->
+
+            <DataGrid x:Name="Consulta" Height="300" Width="700" Margin="10,10,0,0" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="CiudadId" Binding="{Binding CiudadId}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+            </DataGrid>
+
+
+        </StackPanel>          
     </Grid>
 </Window>

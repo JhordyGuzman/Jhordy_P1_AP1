@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jhordy_P1_AP1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Ciudades" Height="450" Width="800">
+        Title="Registro de Ciudades" Height="380" Width="500">
     <Grid>
         <StackPanel>
 
-        <Label Content= "CiudadId" FontWeight= "Bold"  FontSize= "15" Margin="25,10,1,1"/>
+        <Label Content= "CiudadId" FontWeight= "Bold"  FontSize= "15" Margin="2,10,1,1"/>
      <TextBox x:Name= "CiudadIdTextBox" Text="{Binding CiudadId}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width= "70" Height= "25" Margin= "-120,-30,1,1"/>
      <Button  x:Name="BuscarButton"  Content="Buscar" Width="120" Height="35" Margin="115,-30,1,1" Click="BuscarButton_Click"  />
      <Image Source= "/Imagenes/Buscar.png" Width="50" Height= "30" Margin= "30,-36,1,1"/>

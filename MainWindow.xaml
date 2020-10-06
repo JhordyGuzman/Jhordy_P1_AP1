@@ -16,7 +16,7 @@
                     </MenuItem>
 
                     <MenuItem Header= "Consultas">
-                        
+                        <MenuItem x:Name="ConsultasCiudades" Header="Consultas Ciudades" Click="ConsultasCiudades_Click"></MenuItem>
                     
                     
                     </MenuItem>

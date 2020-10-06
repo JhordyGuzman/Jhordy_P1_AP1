@@ -42,7 +42,15 @@ namespace Jhordy_P1_AP1.UI.Registros
             if (NombreTextBox.Text.Length == 0){   
                 esValido = false;
                 MessageBox.Show("Transaccion Fallida","Fallo", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+
             }
+
+            if (NombreTextBox.Text.Length == 0)
+            {
+                esValido = false;
+                MessageBox.Show("Ha ocurrido un error, debe insertar un nombre", "Error",MessageBoxButton.OK, MessageBoxImage.Warning);
+            }        
 
             return esValido;
         }
@@ -64,11 +72,11 @@ namespace Jhordy_P1_AP1.UI.Registros
 
      private void GuardarButton_Click(object sender, RoutedEventArgs e){
             
-            if(!Validar()){
+            if(!Validar())
                 return;
-            }
+            
             var paso = CiudadesBLL.Guardar(ciudades);
-
+            
             if(paso){
                 Limpiar();
                 MessageBox.Show("Transaccion exitosa!" , "Exito", MessageBoxButton.OK, MessageBoxImage.Information);

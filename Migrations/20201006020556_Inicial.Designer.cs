@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Jhordy_P1_AP1.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20201005230838_Inicial")]
+    [Migration("20201006020556_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

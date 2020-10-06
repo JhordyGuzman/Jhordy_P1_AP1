@@ -126,6 +126,7 @@ namespace Jhordy_P1_AP1.BLL
             {
 
                 encontrado = contexto.ciudades.Any(e => e.CiudadId == id);
+                
             }
             catch (Exception)
             {
