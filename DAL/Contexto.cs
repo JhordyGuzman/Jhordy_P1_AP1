@@ -9,9 +9,7 @@ namespace Jhordy_P1_AP1.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder);
-
-            optionsBuilder.UseSqlite(@"Data Source = Data/DCiudad.db");
+            optionsBuilder.UseSqlite(@"Data Source= Data/DCiudad.db");
         }
     }
 }

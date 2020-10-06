@@ -50,7 +50,7 @@ namespace Jhordy_P1_AP1.UI.Registros
             {
                 esValido = false;
                 MessageBox.Show("Ha ocurrido un error, debe insertar un nombre", "Error",MessageBoxButton.OK, MessageBoxImage.Warning);
-            }        
+            }
 
             return esValido;
         }

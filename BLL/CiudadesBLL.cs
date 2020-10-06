@@ -153,13 +153,11 @@ namespace Jhordy_P1_AP1.BLL
 
                 throw;
             }
+            finally
+            {
+                contexto.Dispose();
+            }
             return lista;
         }
-
-
-
     }
-
-
-
 }
