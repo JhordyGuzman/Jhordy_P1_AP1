@@ -13,9 +13,5 @@ namespace Jhordy_P1_AP1.BLL
             return retorno;
         }
 
-        internal static int ToInt(object text)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
