@@ -20,7 +20,7 @@
 
 
           <Button  x:Name="BuscarButton"  Content="Buscar" Width="120" Height="35" Margin="500,-50,0,0" Click="BuscarButton_Click"  />
-           <Image Source= "/Imagenes/Buscar.png" Width="50" Height= "30" Margin= "120,-55,1,1"/>
+           
 
             <DataGrid x:Name="Consulta" Height="300" Width="700" Margin="10,10,0,0" AutoGenerateColumns="False" IsReadOnly="True">
                     <DataGrid.Columns>
