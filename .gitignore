@@ -3,3 +3,4 @@ bin/Debug/*.*
 obj/*.*
 obj/Debug/*.*
 
+obj/Debug/netcoreapp3.1/Jhordy_P1_AP1_MarkupCompile.cache
